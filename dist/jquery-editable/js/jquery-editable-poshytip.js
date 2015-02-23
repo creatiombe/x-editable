@@ -14,6 +14,10 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
 (function ($) {
     "use strict";
     
+    
+    $.fn.poshytip = {};
+    $.fn.poshytip.defaults = {};
+    
     var EditableForm = function (div, options) {
         this.options = $.extend({}, $.fn.editableform.defaults, options);
         this.$div = $(div); //div, containing form. Not form tag. Not editable-element.
